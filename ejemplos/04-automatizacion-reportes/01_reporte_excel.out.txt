@@ -1,0 +1,3 @@
+por_sucursal: 3 filas
+por_linea: 3 filas
+detalle_2026: 108 filas

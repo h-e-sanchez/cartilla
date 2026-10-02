@@ -1,0 +1,6 @@
+Prueba OK
+              monto_ppto  monto_real  desv_%  alerta
+centro_costo                                        
+Comercial      125095000   132532647     5.9   False
+Operaciones    134596000   135948768     1.0   False
+Personas       123121000   130074134     5.6   False

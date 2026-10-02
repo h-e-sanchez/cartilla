@@ -1,0 +1,11 @@
+       fecha sucursal   monto  anio  mes  fin_de_semana
+0 2025-01-01    Norte  781576  2025    1          False
+1 2025-01-01   Centro  833380  2025    1          False
+2 2025-01-01      Sur  776033  2025    1          False
+3 2025-01-02    Norte  875607  2025    1          False
+
+Venta media diaria (fin de semana vs. semana):
+fin_de_semana
+False     931431.0
+True     1216578.0
+Name: monto, dtype: float64

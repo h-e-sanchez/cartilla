@@ -1,0 +1,7 @@
+     anio       linea  unidades    monto
+105  2025       hogar       151  2801201
+106  2025  ferreteria       137  3262107
+107  2025      jardin       155  1949900
+213  2026       hogar       123  2123841
+214  2026  ferreteria       163  4036043
+215  2026      jardin       167  1965089

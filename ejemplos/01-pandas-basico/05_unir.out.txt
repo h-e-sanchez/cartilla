@@ -1,0 +1,7 @@
+   anio  mes centro_costo        cuenta  monto_ppto  monto_real
+0  2026    1    Comercial    comisiones     2209000     2262358
+1  2026    1    Comercial     marketing     4054000     3941789
+2  2026    1  Operaciones        fletes     8177000     7851960
+3  2026    1  Operaciones    mantencion     8213000     8535097
+4  2026    1     Personas  capacitacion     2266000     2159452
+Filas sin pareja: 0

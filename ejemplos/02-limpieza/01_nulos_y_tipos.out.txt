@@ -1,0 +1,9 @@
+Nulos por columna:
+id_colaborador    0
+sucursal          0
+cargo             0
+fecha_ingreso     0
+sueldo_base       4
+dtype: int64
+
+A revisar (sin sueldo): C006, C008, C011, C020

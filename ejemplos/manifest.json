@@ -1,0 +1,145 @@
+{
+  "datos": [
+    "dotacion.csv",
+    "dotacion_sucia.csv",
+    "presupuesto.csv",
+    "real.csv",
+    "ventas_diarias.csv",
+    "ventas_mensuales.csv"
+  ],
+  "modulos": [
+    {
+      "id": "01-pandas-basico",
+      "titulo": "pandas básico",
+      "descripcion": "Importar, inspeccionar, filtrar, agrupar, unir y exportar: el 80% del trabajo diario.",
+      "ejemplos": [
+        {
+          "archivo": "01-pandas-basico/01_importar_csv.py",
+          "id": "01_importar_csv",
+          "titulo": "Importar un CSV a un DataFrame",
+          "aprendes": "leer un archivo con pd.read_csv y mirar sus primeras filas.",
+          "excel": "Datos > Obtener datos > Desde texto/CSV."
+        },
+        {
+          "archivo": "01-pandas-basico/02_inspeccionar.py",
+          "id": "02_inspeccionar",
+          "titulo": "Inspeccionar tipos y resumen",
+          "aprendes": "revisar los tipos de cada columna y un resumen estadístico rápido.",
+          "excel": "Formato de celdas + las funciones CONTAR, PROMEDIO, MIN y MAX."
+        },
+        {
+          "archivo": "01-pandas-basico/03_filtrar.py",
+          "id": "03_filtrar",
+          "titulo": "Filtrar filas y elegir columnas",
+          "aprendes": "quedarte solo con las filas que cumplen una condición.",
+          "excel": "Autofiltro, o la función FILTRAR."
+        },
+        {
+          "archivo": "01-pandas-basico/04_agrupar.py",
+          "id": "04_agrupar",
+          "titulo": "Agrupar y resumir (tabla dinámica)",
+          "aprendes": "sumar por categoría con groupby y armar una tabla cruzada con pivot_table.",
+          "excel": "Insertar > Tabla dinámica."
+        },
+        {
+          "archivo": "01-pandas-basico/05_unir.py",
+          "id": "05_unir",
+          "titulo": "Unir dos tablas (BUSCARV)",
+          "aprendes": "cruzar presupuesto y real por sus columnas comunes con merge.",
+          "excel": "BUSCARV o BUSCARX, pero para todas las filas a la vez."
+        },
+        {
+          "archivo": "01-pandas-basico/06_exportar.py",
+          "id": "06_exportar",
+          "titulo": "Exportar el resultado",
+          "aprendes": "guardar un DataFrame como CSV listo para Excel o Power BI.",
+          "excel": "Archivo > Guardar como > CSV UTF-8."
+        }
+      ]
+    },
+    {
+      "id": "02-limpieza",
+      "titulo": "Limpieza y calidad de datos",
+      "descripcion": "Nulos, fechas mixtas, duplicados y nombres inconsistentes, como llegan del Excel real.",
+      "ejemplos": [
+        {
+          "archivo": "02-limpieza/01_nulos_y_tipos.py",
+          "id": "01_nulos_y_tipos",
+          "titulo": "Nulos, tipos y fechas mixtas",
+          "aprendes": "detectar celdas vacías, convertir texto a fecha y decidir qué hacer con los nulos.",
+          "excel": "Ir a especial > Celdas en blanco, y la función FECHANUMERO."
+        },
+        {
+          "archivo": "02-limpieza/02_duplicados_y_nombres.py",
+          "id": "02_duplicados_y_nombres",
+          "titulo": "Duplicados y nombres inconsistentes",
+          "aprendes": "normalizar texto (\"norte\", \" Centro \", \"SUR\") y quitar filas repetidas.",
+          "excel": "ESPACIOS + NOMPROPIO, y Datos > Quitar duplicados."
+        }
+      ]
+    },
+    {
+      "id": "03-series-de-tiempo",
+      "titulo": "Series de tiempo",
+      "descripcion": "Fechas, resample mensual, promedio móvil, variación anual y presupuesto vs. real.",
+      "ejemplos": [
+        {
+          "archivo": "03-series-de-tiempo/01_fechas.py",
+          "id": "01_fechas",
+          "titulo": "Trabajar con fechas",
+          "aprendes": "convertir una columna a fecha y sacar de ella el año, el mes y el día de la semana.",
+          "excel": "las funciones AÑO, MES y DIASEM."
+        },
+        {
+          "archivo": "03-series-de-tiempo/02_resample_mensual.py",
+          "id": "02_resample_mensual",
+          "titulo": "De diario a mensual (resample)",
+          "aprendes": "llevar una serie diaria a totales mensuales con resample.",
+          "excel": "tabla dinámica con la fecha agrupada por meses."
+        },
+        {
+          "archivo": "03-series-de-tiempo/03_promedio_movil.py",
+          "id": "03_promedio_movil",
+          "titulo": "Promedio móvil",
+          "aprendes": "suavizar el ruido diario con una ventana de 7 días (rolling).",
+          "excel": "PROMEDIO sobre un rango que se desplaza fila a fila."
+        },
+        {
+          "archivo": "03-series-de-tiempo/04_variacion_anual.py",
+          "id": "04_variacion_anual",
+          "titulo": "Variación contra el año anterior (YoY)",
+          "aprendes": "comparar cada mes con el mismo mes del año anterior.",
+          "excel": "(valor 2026 / valor 2025) - 1, columna por columna."
+        },
+        {
+          "archivo": "03-series-de-tiempo/05_presupuesto_vs_real.py",
+          "id": "05_presupuesto_vs_real",
+          "titulo": "Presupuesto vs. real con alertas",
+          "aprendes": "calcular la desviación acumulada por línea y clasificarla con un umbral.",
+          "excel": "SUMAR.SI.CONJUNTO + formato condicional."
+        }
+      ]
+    },
+    {
+      "id": "04-automatizacion-reportes",
+      "titulo": "Automatización de reportes",
+      "descripcion": "Excel con varias hojas generado por código y funciones que se prueban solas.",
+      "ejemplos": [
+        {
+          "archivo": "04-automatizacion-reportes/01_reporte_excel.py",
+          "id": "01_reporte_excel",
+          "titulo": "Reporte Excel con varias hojas",
+          "aprendes": "escribir varias tablas en un mismo .xlsx, una por hoja.",
+          "excel": "copiar y pegar cada tabla en su hoja, todos los meses, a mano."
+        },
+        {
+          "archivo": "04-automatizacion-reportes/02_funcion_reutilizable.py",
+          "id": "02_funcion_reutilizable",
+          "titulo": "Convertir el reporte en una función con prueba",
+          "aprendes": "empaquetar un cálculo en una función y verificarlo con assert (la idea de pytest).",
+          "excel": "una plantilla que se copia cada mes, pero que además se revisa sola."
+        }
+      ]
+    }
+  ]
+}

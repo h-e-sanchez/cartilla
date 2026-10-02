@@ -1,0 +1,9 @@
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.pyc
+# Archivos que crean los ejemplos al correr desde la raíz
+/resumen_sucursal.csv
+/reporte_ventas.xlsx
+# CI pendiente: el token de gh no tiene el permiso 'workflow' (ver ROADMAP)
+.github/

@@ -1,0 +1,5 @@
+Antes: [' Centro ', 'Centro', 'Norte', 'SUR', 'Sur', 'norte']
+Después: ['Centro', 'Norte', 'Sur']
+
+Filas: 39 | duplicadas: 3
+Filas tras limpiar: 36

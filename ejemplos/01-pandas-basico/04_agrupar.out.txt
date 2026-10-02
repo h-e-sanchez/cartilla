@@ -1,0 +1,14 @@
+sucursal  anio
+Centro    2025    80.7
+          2026    87.8
+Norte     2025    82.8
+          2026    90.3
+Sur       2025    77.8
+          2026    87.4
+Name: monto, dtype: float64
+
+anio         2025   2026
+linea                   
+ferreteria  114.6  119.4
+hogar        76.0   87.0
+jardin       50.7   59.1

@@ -1,0 +1,7 @@
+   anio  mes sucursal       linea  unidades    monto
+0  2025    1    Norte       hogar       151  2761941
+1  2025    1    Norte  ferreteria       142  3427312
+2  2025    1    Norte      jardin       117  1364337
+3  2025    1   Centro       hogar        87  1578354
+4  2025    1   Centro  ferreteria       149  3561398
+Filas y columnas: (216, 6)

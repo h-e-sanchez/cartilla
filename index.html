@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>cartilla — manual rápido de Python para control de gestión</title>
+<meta name="description" content="Manual rápido de Python y pandas para analistas de control de gestión y finanzas que vienen de Excel. Ejemplos para copiar y ejecutar en el navegador, con datos 100% sintéticos.">
+<meta property="og:title" content="cartilla — Python para control de gestión">
+<meta property="og:description" content="Ejemplos de pandas para copiar y ejecutar en el navegador, con su equivalente en Excel.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%92%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css?v=3">
+<script src="tema.js?v=2"></script>
+</head>
+<body>
+  <main>
+    <header class="site-header">
+      <h1>cartilla</h1>
+      <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Cambiar el tema">noche</button>
+      <p class="firma">por <a href="https://www.linkedin.com/in/hern%C3%A1n-el%C3%ADas-s%C3%A1nchez-aguilera/" rel="noopener">Hernán Elías Sánchez</a> · parte de su portafolio
+        <em>Control de gestión, construido como software</em></p>
+      <p class="tagline">Manual rápido de Python para analistas de control de gestión y finanzas que
+        vienen de Excel. Cada ejemplo se copia con un clic y se ejecuta aquí mismo, en el navegador,
+        sin instalar nada.</p>
+    </header>
+
+    <section id="como-usar">
+      <h2>Cómo usarla</h2>
+      <ol class="pasos">
+        <li>Elige un módulo. Puedes partir por cualquiera, pero si nunca usaste
+          <a href="glosario.html#pandas"><abbr title="librería de Python para tablas de datos">pandas</abbr></a>,
+          parte por el 1.</li>
+        <li>Lee el ejemplo: arriba dice <strong>qué aprendes</strong> y cuál es su
+          <strong>equivalente en Excel</strong>.</li>
+        <li>Pulsa <strong>Ejecutar</strong>. La primera vez se descarga Python al navegador
+          (unos 10 MB) y después cada ejemplo corre al instante.</li>
+        <li>Cambia el código y vuelve a ejecutar. Si lo rompes, <strong>Restaurar</strong> lo deja
+          como estaba. Así se aprende.</li>
+        <li><strong>Copiar</strong> lleva el código a tu portapapeles para pegarlo en tu propio
+          Python, VS Code o Jupyter.</li>
+      </ol>
+    </section>
+
+    <section id="modulos">
+      <h2>Módulos</h2>
+      <div class="modulos">
+        <a class="tarjeta" href="modulo.html?m=01-pandas-basico">
+          <span class="num">01</span>
+          <h3>pandas básico</h3>
+          <p>Importar, inspeccionar, filtrar, agrupar, unir y exportar: el 80% del trabajo diario.</p>
+          <span class="conteo" data-modulo="01-pandas-basico"></span>
+        </a>
+        <a class="tarjeta" href="modulo.html?m=02-limpieza">
+          <span class="num">02</span>
+          <h3>Limpieza y calidad de datos</h3>
+          <p>Nulos, fechas mixtas, duplicados y nombres inconsistentes, como llegan del Excel real.</p>
+          <span class="conteo" data-modulo="02-limpieza"></span>
+        </a>
+        <a class="tarjeta" href="modulo.html?m=03-series-de-tiempo">
+          <span class="num">03</span>
+          <h3>Series de tiempo</h3>
+          <p>Fechas, resample mensual, promedio móvil, variación anual y presupuesto vs. real.</p>
+          <span class="conteo" data-modulo="03-series-de-tiempo"></span>
+        </a>
+        <a class="tarjeta" href="modulo.html?m=04-automatizacion-reportes">
+          <span class="num">04</span>
+          <h3>Automatización de reportes</h3>
+          <p>Excel con varias hojas generado por código y funciones que se prueban solas.</p>
+          <span class="conteo" data-modulo="04-automatizacion-reportes"></span>
+        </a>
+      </div>
+    </section>
+
+    <section id="datos">
+      <h2>Datos de ejemplo</h2>
+      <p class="hint">Todos los ejemplos usan los mismos archivos de una empresa ficticia,
+        <strong>Comercial Ejemplo S.A.</strong> (3 sucursales, 2025-2026). Son 100% sintéticos,
+        generados con semilla fija por <code>data/generar_datos_sinteticos.py</code>, y están en
+        formato <a href="glosario.html#tidy">tidy</a>: una fila por observación.</p>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Archivo</th><th>Columnas</th><th>Serie</th></tr></thead>
+          <tbody>
+            <tr><td><code>ventas_mensuales.csv</code></td><td><code>anio, mes, sucursal, linea, unidades, monto</code></td><td>mensual</td></tr>
+            <tr><td><code>ventas_diarias.csv</code></td><td><code>fecha, sucursal, monto</code></td><td>diaria</td></tr>
+            <tr><td><code>presupuesto.csv</code> · <code>real.csv</code></td><td><code>anio, mes, centro_costo, cuenta, monto</code></td><td>mensual</td></tr>
+            <tr><td><code>dotacion.csv</code></td><td><code>id_colaborador, sucursal, cargo, fecha_ingreso, sueldo_base</code></td><td>—</td></tr>
+            <tr><td><code>dotacion_sucia.csv</code></td><td>la misma dotación con nulos, duplicados y nombres inconsistentes</td><td>—</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="hint" style="margin-top: var(--sp-3)">Nomenclatura: columnas en snake_case, en
+        español y sin tildes; montos en pesos chilenos sin decimales. Las palabras técnicas están en
+        el <a href="glosario.html">glosario</a>.</p>
+    </section>
+
+    <section id="portafolio">
+      <h2>Portafolio</h2>
+      <p class="hint"><strong>Control de gestión, construido como software</strong> · portafolio de
+        Hernán Elías Sánchez</p>
+      <div class="portafolio-compartido">
+        <div class="callout">
+          <strong>centinela</strong>: la vitrina. Reportes Power BI de control de gestión con datos
+          sintéticos, el modelo y el DAX a la vista.
+          <a href="https://h-e-sanchez.github.io/centinela/">Ver centinela</a>
+        </div>
+        <div class="callout">
+          <strong>consulta</strong>: el taller. SQL, perfilado y gráficos sobre CSV, Parquet o Excel,
+          sin que el archivo salga de tu equipo.
+          <a href="https://h-e-sanchez.github.io/consulta/">Abrir consulta</a>
+        </div>
+        <div class="callout actual">
+          <span class="estas-aqui">estás aquí</span>
+          <strong>cartilla</strong>: el manual. Python y pandas para quien viene de Excel, con ejemplos
+          que se ejecutan en el navegador.
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p class="firma-pie">Parte del portafolio <em>Control de gestión, construido como software</em> · por <a href="https://www.linkedin.com/in/hern%C3%A1n-el%C3%ADas-s%C3%A1nchez-aguilera/" rel="noopener">Hernán Elías Sánchez</a> · datos 100% sintéticos: ninguna cifra ni regla de un empleador.</p>
+      <p><a href="https://github.com/h-e-sanchez/cartilla">Código en GitHub</a> ·
+        <a href="glosario.html">Glosario</a> · Licencia MIT</p>
+      <p class="english"><strong>English:</strong> A hands-on Python and pandas primer by Hernán Elías
+        Sánchez (management control, FP&amp;A, People Analytics) for analysts coming from Excel. Every example shows its Excel
+        equivalent, can be copied with one click and runs in the browser through Pyodide, with no
+        installation. All data is synthetic and generated with a fixed seed; each example is tested
+        so the code on the page always matches its expected output.</p>
+    </footer>
+  </main>
+  <script src="app.js?v=2"></script>
+</body>
+</html>

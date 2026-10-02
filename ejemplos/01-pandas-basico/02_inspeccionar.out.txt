@@ -1,0 +1,17 @@
+anio         int64
+mes          int64
+sucursal    object
+linea       object
+unidades     int64
+monto        int64
+dtype: object
+
+       unidades      monto
+count     216.0      216.0
+mean      128.0  2346307.0
+std        30.0   922127.0
+min        70.0   857016.0
+25%       104.0  1647210.0
+50%       124.0  2161418.0
+75%       149.0  2953200.0
+max       222.0  5746400.0

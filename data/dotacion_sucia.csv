@@ -1,0 +1,40 @@
+id_colaborador,sucursal,cargo,fecha_ingreso,sueldo_base
+C001,Norte,Bodeguero,2019-09-19,688000
+C002,Norte,Bodeguero,2024-01-19,806000
+C003,SUR,Vendedor,2024-09-19,747000
+C004,Norte,Vendedor,04/04/2019,884000
+C005,Norte,Jefe de Tienda,2020-09-07,1330000
+C006,SUR,Vendedor,2018-12-17,
+C007,Norte,Vendedor,2023-12-22,847000
+C008,Norte,Bodeguero,2025-05-26,
+C009,Norte,Bodeguero,2020-12-21,719000
+C010, Centro ,Analista,2020-05-17,1414000
+C011,Norte,Bodeguero,2025-12-30,
+C012,Norte,Jefe de Tienda,2022-11-30,1696000
+C013,Centro,Analista,2019-05-11,1169000
+C014,norte,Vendedor,2021-10-16,679000
+C015,Centro,Bodeguero,2024-08-07,656000
+C016,Centro,Vendedor,2025-12-09,816000
+C017,Centro,Bodeguero,04/10/2018,796000
+C018,Centro,Jefe de Tienda,2018-10-18,1528000
+C019,Centro,Jefe de Tienda,2025-07-03,1516000
+C020,Centro,Bodeguero,10/02/2026,
+C021, Centro ,Analista,2020-09-22,1362000
+C022,Centro,Analista,2020-02-19,1113000
+C023,Centro,Analista,2021-12-22,1232000
+C024,Centro,Analista,2026-03-06,1099000
+C025,Sur,Vendedor,2018-09-06,765000
+C026,Sur,Jefe de Tienda,2019-03-24,1413000
+C027,Sur,Bodeguero,2024-01-06,703000
+C028,Sur,Analista,2020-01-22,1180000
+C029,Sur,Bodeguero,2018-11-05,702000
+C030,Sur,Vendedor,2018-07-27,821000
+C031,Sur,Vendedor,2019-01-18,883000
+C032,Sur,Bodeguero,2019-11-13,694000
+C033,Sur,Analista,2020-05-25,1391000
+C034,Sur,Vendedor,2019-11-06,760000
+C035,Sur,Analista,2020-12-22,1413000
+C036,Sur,Analista,2021-03-14,1232000
+C012,Norte,Jefe de Tienda,2022-11-30,1696000
+C002,Norte,Bodeguero,2024-01-19,806000
+C026,Sur,Jefe de Tienda,2019-03-24,1413000

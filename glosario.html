@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>cartilla — glosario</title>
+<meta name="description" content="Glosario de términos de Python y pandas para analistas de control de gestión, con su equivalente en Excel.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%92%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css?v=3">
+<script src="tema.js?v=2"></script>
+</head>
+<body>
+  <main>
+    <header class="site-header">
+      <p class="migas"><a href="index.html">cartilla</a> / glosario</p>
+      <h1>Glosario</h1>
+      <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Cambiar el tema">noche</button>
+      <p class="tagline">Las palabras técnicas que aparecen en los ejemplos, explicadas con su
+        equivalente en Excel cuando lo hay.</p>
+    </header>
+
+    <section>
+      <h2>Estructuras</h2>
+      <dl class="glosario">
+        <dt id="pandas">pandas</dt>
+        <dd>Librería de Python para trabajar con tablas. Se importa como <code>import pandas as pd</code>.</dd>
+        <dt id="dataframe">DataFrame (df)</dt>
+        <dd>Una tabla: filas, columnas con nombre y un tipo de dato por columna. Equivale a una hoja de Excel con encabezados.</dd>
+        <dt id="series">Series</dt>
+        <dd>Una sola columna de un DataFrame, con su índice. <code>df["monto"]</code> es una Series.</dd>
+        <dt id="indice">índice (index)</dt>
+        <dd>Las etiquetas de las filas. Por defecto son 0, 1, 2…; después de un <code>groupby</code> pasan a ser las categorías agrupadas.</dd>
+        <dt id="dtype">dtype</dt>
+        <dd>El tipo de una columna: <code>int64</code> (entero), <code>float64</code> (decimal), <code>object</code> (texto), <code>datetime64</code> (fecha), <code>bool</code> (verdadero/falso).</dd>
+        <dt id="tidy">tidy (formato largo)</dt>
+        <dd>Una fila por observación y una columna por variable. Es el formato que esperan pandas y Power BI; lo opuesto es la planilla "ancha", con un mes por columna.</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Operaciones</h2>
+      <dl class="glosario">
+        <dt id="read_csv">read_csv / read_excel</dt>
+        <dd>Leen un archivo y devuelven un DataFrame. En Excel: Datos &gt; Obtener datos.</dd>
+        <dt id="filtro">filtro booleano</dt>
+        <dd><code>df[df["mes"] == 12]</code>: se queda con las filas donde la condición es verdadera. En Excel: Autofiltro.</dd>
+        <dt id="groupby">groupby</dt>
+        <dd>Agrupa filas por una o más columnas y resume cada grupo (<code>sum</code>, <code>mean</code>, <code>count</code>). En Excel: tabla dinámica o SUMAR.SI.CONJUNTO.</dd>
+        <dt id="pivot_table">pivot_table</dt>
+        <dd>Tabla cruzada: una variable en filas, otra en columnas y un valor resumido al centro. En Excel: tabla dinámica con columnas.</dd>
+        <dt id="merge">merge</dt>
+        <dd>Une dos tablas por columnas en común. En Excel: BUSCARV/BUSCARX aplicado a todas las filas. <code>how="outer"</code> conserva las filas sin pareja.</dd>
+        <dt id="nan">NaN</dt>
+        <dd>"Not a Number": una celda vacía o faltante. Un NaN no es cero; antes de rellenarlo, hay que decidir qué significa.</dd>
+        <dt id="duplicated">duplicated / drop_duplicates</dt>
+        <dd>Detectan y quitan filas repetidas. En Excel: Datos &gt; Quitar duplicados.</dd>
+        <dt id="assert">assert</dt>
+        <dd>Verifica que algo sea verdadero y detiene el programa si no lo es. Es la base de las pruebas automáticas (pytest).</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Series de tiempo</h2>
+      <dl class="glosario">
+        <dt id="datetime">to_datetime / .dt</dt>
+        <dd>Convierte texto a fecha; <code>.dt.year</code>, <code>.dt.month</code> y <code>.dt.dayofweek</code> extraen sus partes. En Excel: AÑO, MES, DIASEM.</dd>
+        <dt id="resample">resample</dt>
+        <dd>Cambia la frecuencia de una serie (de diaria a mensual, por ejemplo) y resume cada período. Necesita la fecha como índice.</dd>
+        <dt id="rolling">rolling</dt>
+        <dd>Ventana móvil: calcula un promedio (o suma) sobre los últimos n períodos, desplazándose fila a fila.</dd>
+        <dt id="yoy">YoY</dt>
+        <dd>"Year over year": la variación de un período contra el mismo período del año anterior.</dd>
+        <dt id="ytd">YTD</dt>
+        <dd>"Year to date": el acumulado desde el inicio del año hasta el último mes con datos.</dd>
+      </dl>
+    </section>
+
+    <footer>
+      <p class="firma-pie">Parte del portafolio <em>Control de gestión, construido como software</em> · por <a href="https://www.linkedin.com/in/hern%C3%A1n-el%C3%ADas-s%C3%A1nchez-aguilera/" rel="noopener">Hernán Elías Sánchez</a> · datos 100% sintéticos: ninguna cifra ni regla de un empleador.</p>
+      <p><a href="index.html">Volver a la carátula</a></p>
+    </footer>
+  </main>
+</body>
+</html>
