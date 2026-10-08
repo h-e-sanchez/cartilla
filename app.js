@@ -57,6 +57,7 @@
 
     bEjecutar.addEventListener("click", async function () {
       bEjecutar.disabled = true;
+      if (window.analitica) window.analitica.unaVez("modulo-ejecutado/" + (new URLSearchParams(location.search).get("m") || "inicio"));
       var t0 = performance.now();
       try {
         var res = await window.CartillaPython.ejecutar(editor.value, datos, function (m) { estado.textContent = m; });
