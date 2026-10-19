@@ -13,8 +13,7 @@ ol.pasos li { margin-bottom: var(--sp-2); }
 }
 .tarjeta {
   display: block;
-  background: var(--surface-2);
-  border: 1px solid transparent;
+  border: 1px solid var(--border);
   border-radius: var(--r);
   padding: var(--sp-4);
   color: var(--text);
